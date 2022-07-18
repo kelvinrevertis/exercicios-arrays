@@ -9,17 +9,9 @@
 
 const randomNumbers = [10, 30, 15, 25, 50, 40, 5]
 
-const numbersImpares = randomNumbers.map(num =>{
-  
-  if(num % 2 === 1){
-    return num  
-  }
-})
+const numbersImpares = randomNumbers.filter(num => num % 2 === 1)
 
-const validNumbers = numbersImpares.filter(num =>{
-  return num 
-})
-console.log(validNumbers)
+console.log(numbersImpares)
 /*
   02
 
@@ -27,13 +19,19 @@ console.log(validNumbers)
 */
 
 const crazyNumbers = [937, 5, 395, 402, 501, 333, 502, 781, 3, 691]
-
-const numbersLessThan501 = crazyNumbers.filter(num =>{
-  if (num < 501){
-    return num
+/*versão extendida
+const numbersLessThan501 = crazyNumbers.reduce((accumulate,num)=>{
+  if(num < 501){
+    return accumulate + 1 
   }
-}) 
+  return accumulate 
+},0) */
+
+//versão simplificada
+const numbersLessThan501 = crazyNumbers.reduce((accumulate,num)=> num < 501 ? accumulate + 1 : accumulate,0)
+
 console.log(numbersLessThan501)
+
 /*
   03
 
@@ -45,11 +43,8 @@ console.log(numbersLessThan501)
 
 const numbers = [5, 7, 3]
 
-const roots = numbers.map(num =>{
-  
-  return num ** 2
-
-})
+const roots = numbers.map(num =>  num ** 2
+)
 console.log(roots)
 
 /*
@@ -73,11 +68,7 @@ const tarantinoMovies = [
   { name: 'Kill Bill: Volume 1', release: 2003 }
 ]
 
-const before2000 = tarantinoMovies.filter(year =>{
-  if(year.release < 2000){
-  return year
-  }
-})
+const before2000 = tarantinoMovies.filter(year =>year.release < 2000)
 
 console.log(before2000)
 
@@ -98,9 +89,11 @@ const tvShows = [
   { name: 'Watchmen', releaseYear: 2019 }
 ]
 
-const onlyName = tvShows.reduce((accumulate,names)=>{
-  return accumulate + names.name + ', '
-},0)
+const onlyName = tvShows.map(names => names.name)
+
+console.log(onlyName)
+
+/*const onlyName = tvShows.reduce((accumulate,names)=>accumulate + names.name + ', ',0)
 
 console.log(onlyName.slice(1,-1))
 
@@ -123,11 +116,11 @@ const cart = [
   { name: 'Death Stranding', price: 149.99 }
 ]
 
-const listGames = cart.reduce((accumulate,names) =>{
-  return accumulate +'\n - ' + names.name 
-},0)
+const listGames = cart.reduce((accumulate,games) =>{
+  return accumulate +'\n - ' + games.name 
+},'')
 
-console.log(listGames.slice(2))
+console.log(listGames)
 /*
 - Nome 1
 - Nome 2
