@@ -99,3 +99,41 @@ let item = (item)=>{
 console.log(item(8))
 
 //---------------------------------------------------------------------------------------------------------------------------------------
+//Spread
+const sum = (x,y,z)=> x + y + z
+
+const numeros = [1,2,3]
+
+console.log(sum(...numeros))
+const pokemonsNames = [
+    {nome: 'pikachu'},
+    {nome:'Raichu'},
+    {nome: 'Pichu'}
+]
+
+console.log(...pokemonsNames)
+
+console.log(...numeros)
+
+//Rest
+const confereTamanho=(...args)=> console.log(args.length)
+
+confereTamanho(1,2,3)
+
+const NomePokemon = {
+    nome:'Infernape',
+    tipo:'fogo',
+    getPokemon: function(){
+        console.log(`${this.nome} ${this.tipo}`)
+}
+}
+
+NomePokemon.getPokemon()
+
+function getSomething(X,Y){
+    console.log(this.nome,this.tipo,X,Y)
+}
+
+getSomething.call(NomePokemon,'Lutador','Macaco')
+
+getSomething.apply(NomePokemon,['Macaco','Lutador'])
