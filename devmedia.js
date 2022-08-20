@@ -157,20 +157,20 @@ console.log("Conteúdo: " + conteudo_curiosidade);*/
 
 //if ternario
 
-var nota = 10
+/*var nota = 10
 
 nota <= 7 ? console.log("reprovado"):console.log("aprovado")
 
 var aprovado = 1// 1 = true(valor boleano)
 
-aprovado&&console.log("parabens")
+aprovado&&console.log("parabens")*/
 
-let hoje = new Date()
+/*let hoje = new Date()
 
 let mes = hoje.getMonth()
-console.log(mes) //index do mes atual no caso agosto(mes 8) é 7
+console.log(mes) //index do mes atual no caso agosto(mes 8) é 7*/
 
-let produto = "Geladeira";
+/*let produto = "Geladeira";
 let retorno = "";
 
 if(produto == "Geladeira")
@@ -185,9 +185,9 @@ else
 }
 
 produto =(retorno)?console.log("desconto"):console.log("normal")
-;
+;*/
 
-let 
+/*let 
 sinal= "verde";
 
 if
@@ -201,13 +201,61 @@ sinal== "amarelo") {
 }
 else{
     console.log("Pare");
-}
+}*/
 
 
-var numero = 26;
+/*var numero = 26;
 
 if (numero%2==0) {
     console.log("Par");
 } else {
     console.log("Ímpar");
+}*/
+
+/*idade = 18
+idade >= 18 ? resultado = "Maior de idade":resultado = "Menor de idade"
+
+console.log(resultado)*/
+
+
+/*let stat = false;
+let resultado =! stat == "Aprovado";
+
+console.log(resultado)
+
+let stats = false;
+let result = (stats) ? "Aprovado" : "Reprovado";
+
+console.log(result)*/
+
+let aprovado = true;
+
+/*if(aprovado){
+    let resultado = "Aprovado";
+    console.log(resultado)
+}*/
+
+let resultado = aprovado&&"Aprovado"
+console.log(resultado)
+
+const nome = 'Ana';
+switch(nome) {
+    
+case 'Ana':
+    
+default:
+        console.log("Curso de JavaScript");
+        
+break;
+}
+
+let x = "20";
+
+if(x === "20")
+{
+    console.log("X é igual a 20");
+}
+else
+{
+    console.log("X não é igual a 20");
 }
