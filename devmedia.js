@@ -259,3 +259,18 @@ else
 {
     console.log("X não é igual a 20");
 }
+
+class Person {
+    constructor(name,lastName){
+        this.name=name
+        this.lastName=lastName
+    }
+
+    getFullName(){
+        return this.name +""+this.lastName
+    }
+
+    static show(){
+        console.log("Hello World")
+    }
+}
