@@ -273,4 +273,9 @@ class Person {
     static show(){
         console.log("Hello World")
     }
+
 }
+
+const kelvin = new Person("Kelvin","Revertis")
+console.log(kelvin)
+Person.show()
