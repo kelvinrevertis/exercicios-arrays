@@ -235,7 +235,7 @@ let aprovado = true;
     console.log(resultado)
 }*/
 
-let resultado = aprovado&&"Aprovado"
+/*let resultado = aprovado&&"Aprovado"
 console.log(resultado)
 
 const nome = 'Ana';
@@ -247,9 +247,9 @@ default:
         console.log("Curso de JavaScript");
         
 break;
-}
+}*/
 
-let x = "20";
+/*let x = "20";
 
 if(x === "20")
 {
@@ -258,9 +258,9 @@ if(x === "20")
 else
 {
     console.log("X não é igual a 20");
-}
+}*/
 
-class Person {
+/*class Person {
     constructor(name,lastName){
         this.name=name
         this.lastName=lastName
@@ -278,4 +278,33 @@ class Person {
 
 const kelvin = new Person("Kelvin","Revertis")
 console.log(kelvin)
-Person.show()
+Person.show()*/
+
+var meses = [
+    "janeiro",
+    "fevereiro",
+    "março",
+    "abril",
+    "maio",
+    "junho",
+    "julho",
+    "agosto",
+    "setembro",
+    "outubro",
+    "novembro",
+    "dezembro"
+];
+
+console.log(meses[0]);
+
+console.log(meses[10])
+
+var funcionarios = [
+    "Carla",
+    "Luana",
+    "Rodrigo"
+];
+
+funcionarios[0] = 'Joana';
+
+console.log(funcionarios);

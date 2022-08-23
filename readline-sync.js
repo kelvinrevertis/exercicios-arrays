@@ -17,8 +17,9 @@ let subtracao = a - b;
 
 console.log("\nResultado: "+subtracao);*/
 
-import rl_sync from 'readlineSync';
+/*import rl_sync from 'readlineSync';
 
 let nome = rl_sync.question("Informe seu nome: ");
 
-console.log("Olá, "+nome+"!");
+console.log("Olá, "+nome+"!");*/
+
