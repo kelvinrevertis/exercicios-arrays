@@ -1,139 +1,63 @@
-//Map-------------------------------------------------------------------------------------------------------------------------
-const numbers = [1,9,4,49,69,84,6,12,44,91]
-
-let raiz = numbers.map((num) => {
-    return Math.sqrt(num)})
-
-console.log(raiz)
-
-let show = numbers.map((num)=>{
-    return num
-})
-
-console.log(show)
-
-//filter-------------------------------------------------------------------------------------------------------------------------
-let maiorque40 = numbers.filter(num => {return num >= 40})
-
-console.log(maiorque40)
-
-const pokemon = [
-    {nome:'pikachu', tipo:'eletrico', forca:45},
-    {nome:'Raichu', tipo:'eletrico', forca:60},
-    {nome:'Manetrik', tipo:'eletrico', forca:40},
-    {nome:'Charizard', tipo:'Fogo Voador', forca: 80},
-    {nome:'Empoleon', tipo:'Agua Metal', forca:78},
-    {nome:'Sceptyle', tipo:'Grama', forca:70}
-]
-
-const eletricType =pokemon.filter(pkn =>{
-    return pkn.tipo == 'eletrico'
-})
-
-console.log(eletricType)
-
-// Checa palindromo-------------------------------------------------------------------------------------------------------------------------
-let reverso = numbers.map((num)=>{
-    return num
-})
-
-reverso.reverse()
-
-
-const testando =()=>{
-    if(reverso === numbers){
-    console.log("São iguais")
-}else{
-    console.log("Não são iguais")
-}
-}
-
-testando()
-
-
-console.log(numbers)
-console.log(reverso)
-
-// Reduce-------------------------------------------------------------------------------------------------------------------------
-//forma extensa
-retornaNomes = (nomes,pokemons)=>{
-    return nomes+pokemons.nome+','
-}
-
-let juntaPokemon = pokemon.reduce(retornaNomes,'')
-
-console.log(juntaPokemon.slice(0,-1))
-
-//simplificada
-let juntaPokemon2 = pokemon.reduce((accumulator,nomes)=>{
-    return accumulator + nomes.nome + ','
-
-},0)
-
-console.log(juntaPokemon2.slice(1,-1))
-
-//soma de numeros
-let somaNumbers = numbers.reduce((accumulate,number) => { return accumulate + number},0)
-
-console.log(somaNumbers)
-//soma de numeros em um array de objetos
-let somaForca = pokemon.reduce((accumulate,pokemon)=>{
-    return accumulate + pokemon.forca
-},0)
-
-console.log(somaForca)
-// soma de valores especificos de um array de objetos
-let somaForcaEletrico = pokemon.reduce((accumlate,pokemon) =>{
-    if(pokemon.tipo== 'eletrico'){
-        return accumlate + pokemon.forca
+for(let x = 0; x<=10; x++){//loop for, enquanto o x não chegar em 10 o X recebe +1
+    if(x!=5){//condicional if, o codigo continua se o valor de x for diferente de 5
+    console.log(x)
+    }else{//se o x chegar no 5 o codigo chega no break, e todo o codigo é interrompido.
+        break
     }
-    return accumlate
-},0)
-
-console.log(somaForcaEletrico)
-
-let item = (item)=>{
-    return item +1
 }
 
-console.log(item(8))
+// impressão no console: 
 
-//---------------------------------------------------------------------------------------------------------------------------------------
-//Spread
-const sum = (x,y,z)=> x + y + z
 
-const numeros = [1,2,3]
+var a = "ABC"
 
-console.log(sum(...numeros))
-const pokemonsNames = [
-    {nome: 'pikachu'},
-    {nome:'Raichu'},
-    {nome: 'Pichu'}
-]
-
-console.log(...pokemonsNames)
-
-console.log(...numeros)
-
-//Rest
-const confereTamanho=(...args)=> console.log(args.length)
-
-confereTamanho(1,2,3)
-
-const NomePokemon = {
-    nome:'Infernape',
-    tipo:'fogo',
-    getPokemon: function(){
-        console.log(`${this.nome} ${this.tipo}`)
-}
+switch(a){
+    case "ABC":
+    case "A":
+        {
+            console.log("A string tem ABC");
+            break;
+        }
+    case "BC":
+        {
+            console.log("A string tem BC");
+            break;
+        }
+    default:
+        {
+            console.log("A string fora do padrão");
+            break;
+        }
 }
 
-NomePokemon.getPokemon()
-
-function getSomething(X,Y){
-    console.log(this.nome,this.tipo,X,Y)
+function soma(a,b){
+    return a+b
 }
 
-getSomething.call(NomePokemon,'Lutador','Macaco')
+console.log(soma(5,6))
 
-getSomething.apply(NomePokemon,['Macaco','Lutador'])
+function soma(a,b,c){
+    return a+b+c 
+}
+console.log(soma(2,2,2))
+
+/*//codigo em JavaScript
+var a = 5 //valor inicial de a
+var b = 10// valor inicial de b
+console.log("Valor inicial a:"+a+" b:"+b)
+function trocaValores(a,b){// função para a troca dos valores das variáveis
+    a = a+b
+    b = a-b
+    a = a-b
+    console.log("Valor atual de a: "+a+" b:"+b)//impressão dos valores trocados
+}
+trocaValores(a,b)//chamada da função, valor trocado de a = 10 e b = 5*/
+
+//codigo em JavaScript
+var a = 5 //valor inicial de a
+var b = 10// valor inicial de b
+console.log("Valor inicial a:"+a+" b:"+b)
+a = a+b
+b = a-b
+a = a-b
+console.log("Valor atual de a: "+a+" b:"+b)//impressão dos valores trocados  a = 10 e b = 5
