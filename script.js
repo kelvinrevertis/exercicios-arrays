@@ -61,3 +61,11 @@ a = a+b
 b = a-b
 a = a-b
 console.log("Valor atual de a: "+a+" b:"+b)//impressão dos valores trocados  a = 10 e b = 5
+
+let valor_produto = 500;
+
+for ( let contador = 1; contador <= 5; contador++ )
+{
+    let valor_parcela = valor_produto / contador;
+    console.log("Nº de parcelas: " + contador + " - Valor da parcela: R$" + valor_parcela.toFixed(2));
+}
