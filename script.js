@@ -189,3 +189,25 @@ let clientes_array = [
     { id: 2, nome: "Tânia", telefone: "99999-0778" },
     { id: 3, nome: "Carlos", telefone: "99999-0551" }
 ];
+
+console.log(clientes_array[0].nome)
+console.log(clientes_array[2].id)
+
+let categorias =[
+    {id: 1, nome: "Ficção científica"},
+    {id: 2, nome: "Aventura"},
+    {id: 3, nome: "Comédia"},
+    {id: 4, nome: "Terror"},
+    {id: 5, nome: "Drama"}
+];
+
+
+for(let categoria of categorias)
+{
+
+    console.log(categoria.id);
+    console.log(categoria.nome);
+
+    console.log("\n");
+
+}
