@@ -1,4 +1,4 @@
-for(let x = 0; x<=10; x++){//loop for, enquanto o x não chegar em 10 o X recebe +1
+/*for(let x = 0; x<=10; x++){//loop for, enquanto o x não chegar em 10 o X recebe +1
     if(x!=5){//condicional if, o codigo continua se o valor de x for diferente de 5
     console.log(x)
     }else{//se o x chegar no 5 o codigo chega no break, e todo o codigo é interrompido.
@@ -39,7 +39,7 @@ console.log(soma(5,6))
 function soma(a,b,c){
     return a+b+c 
 }
-console.log(soma(2,2,2))
+console.log(soma(2,2,2))*/
 
 /*//codigo em JavaScript
 var a = 5 //valor inicial de a
@@ -54,7 +54,7 @@ function trocaValores(a,b){// função para a troca dos valores das variáveis
 trocaValores(a,b)//chamada da função, valor trocado de a = 10 e b = 5*/
 
 //codigo em JavaScript
-var a = 5 //valor inicial de a
+/*var a = 5 //valor inicial de a
 var b = 10// valor inicial de b
 console.log("Valor inicial a:"+a+" b:"+b)
 a = a+b
@@ -68,9 +68,9 @@ for ( let contador = 1; contador <= 5; contador++ )
 {
     let valor_parcela = valor_produto / contador;
     console.log("Nº de parcelas: " + contador + " - Valor da parcela: R$" + valor_parcela.toFixed(2));
-}
+}*/
 
-let funcionarios = [
+/*let funcionarios = [
     {id: 1, nome: "César", habilitado: false},
     {id: 2, nome: "Jéssica", habilitado: false},
     {id: 3, nome: "Renan", habilitado: true},
@@ -96,9 +96,9 @@ while ( cont < funcionarios.length ) {
 
 if (!encontrouHabilitado) {
     console.log("Nenhum funcionário habilitado encontrado");
-}
+}*/
 
-let alunos = [
+/*let alunos = [
     {id: 1, nome: "Bruna", media: 8},
     {id: 2, nome: "Laura", media: 7},
     {id: 3, nome: "José", media: 5},
@@ -123,17 +123,17 @@ while ( contador < alunos.length ) {
     console.log("Média: " + aluno.media);
     console.log("\n");
 
-}
+}*/
 
 //exemplo for in
 
-let pokemon = [ {nome:"Pikachu", tipo:"Eletrico", habilidade: "Statica", Numero: 25}]
+/*let pokemon = [ {nome:"Pikachu", tipo:"Eletrico", habilidade: "Statica", Numero: 25}]
 
 for (let dados in pokemon){
     console.log(pokemon[dados])
-}
+}*/
 
-let carro = {nome:"Argo", marca:"Fiat", preco:"50000", ano:2020}
+/*let carro = {nome:"Argo", marca:"Fiat", preco:"50000", ano:2020}
 
 let percentual_desconto = 5
 
@@ -146,9 +146,9 @@ for (let propriedade in carro){
     }else{
         console.log(propriedade+":"+carro[propriedade])
     }
-}
+}*/
 
-let meses= ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+/*let meses= ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
 for(let contador = 0; contador <= 11; contador++)
         {
@@ -164,9 +164,9 @@ for(let contador = 0; contador <= 11; contador++)
 
 let notas = [5, 7, 6, 8];
 
-let media = 0;
+let media = 0;*/
 
-do {
+/*do {
 
     console.log(notas[contador]);
 
@@ -182,8 +182,8 @@ if( media >= 6 ){
     console.log("Aluno aprovado");
 } else {
     console.log("Aluno reprovado");
-}
-
+}*/
+/*
 let clientes_array = [
     { id: 1, nome: "Mônica", telefone: "99999-6565" },
     { id: 2, nome: "Tânia", telefone: "99999-0778" },
@@ -191,9 +191,9 @@ let clientes_array = [
 ];
 
 console.log(clientes_array[0].nome)
-console.log(clientes_array[2].id)
+console.log(clientes_array[2].id)*/
 
-let categorias =[
+/*let categorias =[
     {id: 1, nome: "Ficção científica"},
     {id: 2, nome: "Aventura"},
     {id: 3, nome: "Comédia"},
@@ -208,6 +208,103 @@ for(let categoria of categorias)
     console.log(categoria.id);
     console.log(categoria.nome);
 
+    console.log("\n");
+
+}*/
+/*let total_meses = meses.length;
+
+for (let contador=0; contador<=total_meses; contador++) {
+
+    console.log(meses[contador]);
+
+}*/
+
+/*let alunos1 = ["Carlos", "Pablo", "Juliana", "Ingrid"];
+let total_alunos = alunos1.length;
+
+for ( let contador=0; contador<total_alunos; contador++ ) {
+
+    console.log(alunos1[contador]);
+
+}*/
+
+/*do{  
+console.log(contador);
+    
+contador++;
+
+} while(contador<=10);*/
+
+/*let valor_mensalidade = 100;
+let taxa_multa = 0.02; // 2%
+let total_dias = 10;
+let contador =1;
+
+do {
+
+let dias_atraso = contador;
+
+let valor_multa = valor_mensalidade * taxa_multa * dias_atraso;
+
+let novo_valor_mensalidade = valor_mensalidade+valor_multa;
+
+console.log("Dia(s) de atraso: " + dias_atraso + " - mensalidade atualizada: R$" + novo_valor_mensalidade + ",00");
+
+contador++;
+
+} while( contador < total_dias );
+
+*/
+/*let funcionario = { id: 1, nome: "João Vítor", salario: 3500 };
+
+for( let dados in funcionario){
+    console.log(funcionario[dados]);
+}*/
+
+/*let disciplinas = [
+    { id: 1, nome: "português", carga_horaria: 250 },
+    { id: 2, nome: "matemática", carga_horaria: 220 },
+    { id: 3, nome: "história", carga_horaria: 150 },
+    { id: 4, nome: "geografia", carga_horaria: 150 },
+    { id: 5, nome: "inglês", carga_horaria: 70 }
+];
+for ( let disciplina of disciplinas ) {
+
+    let id_discipina = disciplina.id;
+    let nome_discipina = disciplina.nome;
+    let carga_horaria_discipina = disciplina.carga_horaria;
+
+    console.log("Id da disciplina: " + id_discipina);
+    console.log("Nome da disciplina: " + nome_discipina);
+    console.log("Carga horária da disciplina: " + carga_horaria_discipina);
+
+    console.log("\n");
+
+}*/
+
+let alunos = [
+    {id: 1, nome: "Bruna", media: 8},
+    {id: 2, nome: "Laura", media: 7},
+    {id: 3, nome: "José", media: 5},
+    {id: 4, nome: "Guilherme", media: 4},
+    {id: 5, nome: "Rafael", media: 10},
+];
+
+let contador = 0;
+
+for ( contador in alunos ) {
+
+    let aluno = alunos[contador];
+
+    contador++;
+
+    if ( aluno.media < 6 ) {
+        continue;
+    }
+
+    console.log("Id: " + aluno.id);
+    console.log("Nome: " + aluno.nome);
+    console.log("Média: " + aluno.media);
     console.log("\n");
 
 }
