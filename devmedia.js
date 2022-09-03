@@ -228,9 +228,9 @@ let result = (stats) ? "Aprovado" : "Reprovado";
 
 console.log(result)*/
 
-let aprovado = true;
+/*let aprovado = true;
 
-/*if(aprovado){
+if(aprovado){
     let resultado = "Aprovado";
     console.log(resultado)
 }*/
@@ -280,7 +280,7 @@ const kelvin = new Person("Kelvin","Revertis")
 console.log(kelvin)
 Person.show()*/
 
-var meses = [
+/*var meses = [
     "janeiro",
     "fevereiro",
     "março",
@@ -313,4 +313,10 @@ var numero_1 = 5;
 console.log(numero_1++);
 
 var numero_2 = 5;
-console.log(++numero_2);
+console.log(++numero_2);*/
+
+let cidades= "Manaus-Salvador-Santos-Curitiba-Recife";
+
+let array_cidades = cidades.split("-");
+
+console.log(array_cidades[1])
