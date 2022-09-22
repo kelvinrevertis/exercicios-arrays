@@ -128,11 +128,18 @@ console.log(listGames)
 */
 
 let text = "Usando length"
+let fraseCompleta = `       "${text}" Essa frase contem ${text.length} caracteres`
 
-console.log(`"${text}" Essa frase contem ${text.length} caracteres`)
+console.log(fraseCompleta)
 
 let upperText = text.toUpperCase()
 let lowerText = text.toLocaleLowerCase()
 console.log(upperText)
 console.log(lowerText)
+
+let trimmed = fraseCompleta.trim()
+
+console.log(trimmed)
+
+
 
