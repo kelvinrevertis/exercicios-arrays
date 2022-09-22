@@ -126,3 +126,13 @@ console.log(listGames)
 - Nome 2
 - Nome 3
 */
+
+let text = "Usando length"
+
+console.log(`"${text}" Essa frase contem ${text.length} caracteres`)
+
+let upperText = text.toUpperCase()
+let lowerText = text.toLocaleLowerCase()
+console.log(upperText)
+console.log(lowerText)
+
