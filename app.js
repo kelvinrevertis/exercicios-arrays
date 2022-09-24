@@ -141,8 +141,8 @@ let trimmed = fraseCompleta.trim()
 
 console.log(trimmed)
 
-console.log(text.padStart(20))
-console.log(fraseCompleta.padStart(20))
+console.log(text.padStart(20,"-  ")+"Teste 1")
+console.log(fraseCompleta.padStart(20, "....") +" TEste2")
 let label_aluno = "Aluno";
 let valor_aluno = "Edmilson";
 
@@ -152,5 +152,7 @@ let valor_grau = "Ensino Médio Completo";
 console.log(label_aluno.padStart(20, " ") + ": " + valor_aluno);
 
 console.log(label_grau.padStart(20, " ") + ": " + valor_grau);
+
+console.log(text.padEnd(30,".")+" Teste 3")
 
 
