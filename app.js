@@ -155,4 +155,7 @@ console.log(label_grau.padStart(20, " ") + ": " + valor_grau);
 
 console.log(text.padEnd(30,".")+" Teste 3")
 
+const replacedText = label_grau.replace("escolaridade","temperatura")
+console.log(replacedText)
+
 
