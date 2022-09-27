@@ -155,7 +155,15 @@ console.log(label_grau.padStart(20, " ") + ": " + valor_grau);
 
 console.log(text.padEnd(30,".")+" Teste 3")
 
-const replacedText = label_grau.replace("escolaridade","temperatura")
+let replacedText = label_grau.replace("escolaridade","temperatura")
+console.log(replacedText)
+
+console.log(replacedText.substring(8,19))
+
+console.log(replacedText.substr(8,11))
+
+replacedText += "..."
+
 console.log(replacedText)
 
 
