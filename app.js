@@ -168,4 +168,10 @@ console.log(replacedText)
 
 console.log(replacedText.indexOf("temperatura"))
 
+const randomWords = "Vacuo Zero Origem Maçã Espaço Regras Estrada Tempo"
+
+const createArray = randomWords.split(" ")
+
+console.log(createArray)
+
 
