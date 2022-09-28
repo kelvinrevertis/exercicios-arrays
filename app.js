@@ -166,4 +166,6 @@ replacedText += "..."
 
 console.log(replacedText)
 
+console.log(replacedText.indexOf("temperatura"))
+
 
