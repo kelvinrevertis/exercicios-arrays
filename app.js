@@ -174,4 +174,6 @@ const createArray = randomWords.split(" ")
 
 console.log(createArray)
 
+console.log("O simbolo da marca apple é uma "+createArray[3]+" com uma mordida")
+
 
