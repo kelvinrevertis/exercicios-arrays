@@ -177,3 +177,30 @@ console.log(createArray)
 console.log("O simbolo da marca apple é uma "+createArray[3]+" com uma mordida")
 
 
+let nome = "Jackeline";
+
+let texto = nome+ " é muito legal!";
+
+let novo_texto = texto.replace("legal","simpática");
+
+console.log(novo_texto);
+console.log(novo_texto.length)
+
+let cores = "verde azul branco amarelo preto";
+
+let array_cores = cores.split(" ");
+
+for ( const cor of array_cores ){
+
+    if( cor.length > 5 ){
+        console.log(" A cor " +cor+" tem mais que 5 caracteres" );
+    } else {
+console.log(" A cor " +cor+" não tem mais que 5 caracteres" );
+    }
+
+}
+
+
+let tecnologias = "PHP, JavaScript, C#, Python, Java";
+
+console.log(tecnologias.substr(5, 10));
