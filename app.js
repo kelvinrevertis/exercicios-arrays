@@ -204,3 +204,46 @@ console.log(" A cor " +cor+" não tem mais que 5 caracteres" );
 let tecnologias = "PHP, JavaScript, C#, Python, Java";
 
 console.log(tecnologias.substr(5, 10));
+
+let frase = "Acredite em si próprio e chegará um dia em que os outros não terão outra escolha senão acreditar com você.";
+let posicao = frase.indexOf("esperança");
+
+console.log(posicao);
+
+let frasez = "Estou aprendendo JavaScript na DevMedia";
+
+let resultado = frasez.substr(17,10);
+
+console.log(resultado);
+
+/*let conteudo = "Neste artigo de JavaScript veremos como utilizar o método substring() para extrair uma sequência de caracteres de uma string.";
+
+let tamanho = conteudo.length;
+let resumo = "";
+
+if(tamanho>100){
+ resumo = conteudo.substring(0, 97);
+  resumo += "...";
+  console.log(resumo)
+} 
+else{
+ resumo = conteudo;
+  console.log(resumo)
+}*/
+
+let paises_string = "Brasil Espanha Canadá Irlanda Suíça";
+
+let paises_array = paises_string.split(" ");
+
+
+console.log(paises_array); // (5) ["Brasil", "Espanha", "Canadá", "Irlanda", "Suíça"]
+
+
+let programador_1= "FLÁVIA";
+let programador_2 = "flávia";
+
+if(programador_1 == programador_2.toUpperCase()){
+    console.log("iguais");
+} else {
+    console.log("diferentes");
+}
