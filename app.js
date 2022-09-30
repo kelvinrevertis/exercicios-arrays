@@ -247,3 +247,15 @@ if(programador_1 == programador_2.toUpperCase()){
 } else {
     console.log("diferentes");
 }
+
+
+let atores = "Will Smith;Brad Pitt;Adam Sandler;Tom Cruise";
+
+let array_atores = atores.
+split(";")
+;
+
+for(const ator of array_atores)
+{
+    console.log(ator);
+}
