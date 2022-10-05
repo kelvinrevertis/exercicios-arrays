@@ -28,16 +28,31 @@
   </div>
 
   <div>
-    <ul>
+    <ul class="list">
       <li>Kelvin</li>
       <li>Reverts</li>
       <li>dos</li>
-      <li>Santos</li>
+
     </ul>
+    <button>Click to clean</button>
   </div>
 
 
-  <script src="app.js"></script>
+  <script src="app.js">
+
+  </script>
+  <script>
+        $('li').fadeOut("1000").fadeIn("3000")
+        $('ul').append('Sant')
+        $('.list').append('os')
+        $('button').css({'background-color':'blue'})
+        $('button').css({'color':'white'})
+        $('button').on("click",botao)
+        
+        function botao(){
+          $('ul').remove()
+        }
+  </script>
 </body>
 
 </html>
