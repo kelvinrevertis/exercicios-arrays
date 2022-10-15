@@ -7,11 +7,11 @@
   Dica: pesquise por remainder operator (%).
 */
 
-const randomNumbers = [10, 30, 15, 25, 50, 40, 5]
+/*const randomNumbers = [10, 30, 15, 25, 50, 40, 5]
 
 const numbersImpares = randomNumbers.filter(num => num % 2 === 1)
 
-console.log(numbersImpares)
+console.log(numbersImpares)*/
 /*
   02
 
@@ -259,3 +259,32 @@ for(const ator of array_atores)
 {
     console.log(ator);
 }
+
+
+const randomNumbers = [0,0,0,1,001]
+
+console.log(randomNumbers.length)
+
+const filterNumbers = randomNumbers.filter(num=> num==0,0,1)
+console.log(filterNumbers)
+
+
+
+
+/*const filterNumbers = randomNumbers.reduce((accumulate,num)=> num==001? accumulate: accumulate,0)
+console.log(filterNumbers)*/
+
+
+/*/*const crazyNumbers = [937, 5, 395, 402, 501, 333, 502, 781, 3, 691]
+/*versão extendida
+const numbersLessThan501 = crazyNumbers.reduce((accumulate,num)=>{
+  if(num < 501){
+    return accumulate + 1 
+  }
+  return accumulate 
+},0) */
+
+//versão simplificada
+/*const numbersLessThan501 = crazyNumbers.reduce((accumulate,num)=> num < 501 ? accumulate + 1 : accumulate,0)
+
+console.log(numbersLessThan501)*/
